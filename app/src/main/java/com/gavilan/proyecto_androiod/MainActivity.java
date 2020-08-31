@@ -2,10 +2,11 @@ package com.gavilan.proyecto_androiod;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     // Creamos la variables que harán referencia a los widgets
@@ -25,7 +26,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void Saludar(){
+    public void Saludar(View view){
+        Toast.makeText(this,"Hiciste click",Toast.LENGTH_LONG).show();
+    }
 
+    public void Despedir(View view){
+        Toast.makeText(this,"Adios",Toast.LENGTH_LONG).show();
     }
 }
